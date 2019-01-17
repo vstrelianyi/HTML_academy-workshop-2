@@ -53,6 +53,7 @@ body {
   background-color: #333333;
   text-align: center;
   transition: transform 0.3s ease-in-out;
+  transform: translateX(-80px);
 }
 
 .caption-link::before {
@@ -70,4 +71,9 @@ body {
   height: 70%;
   color: #d7bb97;
   content: attr(data-description);
+}
+
+.caption-link:hover::before,
+.caption-link:hover::after {
+  transform: translateX(0);
 }
